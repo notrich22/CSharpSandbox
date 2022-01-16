@@ -18,7 +18,7 @@ namespace ConsoleApp1
         }
         public class Square : Figure
         {
-            private double Side { get; set; }
+            public double Side { get; set; }
             public override double get_area()
             {
                 return Side * Side;
@@ -255,7 +255,6 @@ namespace ConsoleApp1
                 MXD_FGR.add_figure(circle);
                 MXD_FGR.add_figure(ellipse);
                 Console.WriteLine($"Mixed figure: A: {MXD_FGR.get_area()}");
-
         }
     }
     }
